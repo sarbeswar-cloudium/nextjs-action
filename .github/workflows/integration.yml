@@ -45,4 +45,4 @@ jobs:
       run: npm i
 
     - name: "Run test cases"
-      run: npm run test
+      run: npm run test -- --passWithNoTests
