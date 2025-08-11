@@ -1,13 +1,20 @@
 import Header from '../../components/header';
+import LoginForm from './_components/LoginForm';
+
 
 const Login = () => {
+    
+
     return (
         <>
-        <Header />
-        <div className="">
-            <h1>Login</h1>
+        <div className="bg-white">
+            <Header />
+
+            <div className="">
+                <LoginForm></LoginForm>
+            </div>
         </div>
-        </>
+    </>
     )
 }
 
