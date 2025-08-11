@@ -10,7 +10,7 @@ const LoginForm = (request: Request) => {
     const [password, setPassword] = useState('');
     const router = useRouter();
     
-    const handleSubmit = async (e: any) => {
+    const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault()
         if (username === '' || password === '') {
             console.log("username and password are required!");
