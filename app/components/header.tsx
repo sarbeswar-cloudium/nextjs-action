@@ -12,8 +12,8 @@ export default function Header() {
                 <ul className="menu menu-horizontal px-1">
                 <li><Link href={"/"}>Home</Link></li>
                 <li><Link href={"/about"}>About</Link></li>
-                <li><Link href={"/services"}>Services</Link></li>
                 <li><Link href={"/contact"}>Contact</Link></li>
+                <li><Link href={"/login"}>Login</Link></li>
                 <li style={{display: 'none'}}>
                     <details>
                     <summary>Parent</summary>
