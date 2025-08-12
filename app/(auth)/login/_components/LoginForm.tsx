@@ -5,7 +5,7 @@ import { Login } from '@/app/services/userService';
 
 
 
-const LoginForm = (request: Request) => {
+const LoginForm = () => {
     const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
     const router = useRouter();
@@ -18,7 +18,9 @@ const LoginForm = (request: Request) => {
         }
         
         // call api
-        const {data, error} = await Login(request, username, password);
+        const {data, error} = await Login(username, password);
+
+        console.log(data);
 
         if (error) {
             return false;

@@ -1,8 +1,8 @@
 "use server";
 import { cookies } from "next/headers";
 
-export const Login = async (request: Request, username: string, password: string) => {
-    const baseUrl = process.env.BASE_URL;
+export const Login = async (username: string, password: string) => {
+    const baseUrl = process.env.NEXT_PUBLIC_BASE_URL;
     try {
         const formData = new URLSearchParams();
         formData.append('username', username);
