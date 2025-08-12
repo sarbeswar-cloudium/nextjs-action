@@ -1,4 +1,4 @@
-import Header from '../../components/header';
+import Header from '../../components/Header';
 import LoginForm from './_components/LoginForm';
 
 

@@ -1,10 +1,10 @@
-import Header from "../../components/header";
+import Header from "../_components/Header";
 
 const Dashboard = () => {
     return (
         <>
         <div className="">
-            <Header></Header>
+            <Header />
             <h1>Dashboard</h1>
         </div>
         </>

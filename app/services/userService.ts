@@ -46,3 +46,15 @@ export const Login = async (username: string, password: string) => {
         };
     }
 }
+
+export const Logout = async () => {
+    try {
+        const cookieDelete = await cookies();
+        cookieDelete.delete("token");
+        cookieDelete.set('token', '');
+        return 1;
+    } catch (error) {
+        console.log(error);
+    }
+    return 0;
+}
